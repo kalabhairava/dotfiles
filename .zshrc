@@ -125,3 +125,5 @@ alias dev='fa && make proxy-dev'
 alias docs='fa && make docs'
 alias say='cowsay "What I cannot build, I do not understand completely."'
 alias test='make test-watch'
+
+export EDITOR="vim"

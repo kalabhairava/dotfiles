@@ -122,8 +122,11 @@ alias cleanp='SKIP_JAVA=1 SKIP_WEB=1 SKIP_CPP=1 SKIP_GO=1 SKIP_WIN=1 SKIP_LINUX=
 alias vm='ssh ubuntu@10.0.65.222'
 alias fa='cd /Users/manjunathad/Projects/spark && source .buildenv/bin/activate && cd src/rubrik/spark-ui && cls'
 alias dev='fa && make proxy-dev'
+alias gps='fa && make proxy proxy=https://spark-dev.dev-089.my.rubrik-lab.com/'
+alias sr='fa && make proxy proxy=https://rubrik.dev-167.my.rubrik-lab.com/'
+alias al='yarn prebuild && arc lint && yarn checktypes && yarn test-changed-ci && arc land'
 alias docs='fa && make docs'
-alias say='cowsay "What I cannot build, I do not understand completely."'
 alias test='make test-watch'
+alias gum='gch master && gpr'
 
 export EDITOR="vim"

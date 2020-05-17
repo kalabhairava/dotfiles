@@ -91,7 +91,17 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# GENERAL ALIASES
 alias cls="clear"
+alias ..='cd ..'
+alias fz='code ~/.zshrc'
+alias sz='source ~/.zshrc && fa'
+alias wget="wget -c"
+alias yt="youtube-dl -c"
+
+
+# GIT ALIASES
 alias gsa="git status"
 alias gd="git diff"
 alias gds="git diff --staged"
@@ -110,23 +120,19 @@ alias gstl='git stash list'
 alias gsta='git stash apply'
 alias gstc='git stash clear'
 alias gstp='git stash pop'
-alias wget="wget -c"
-alias yt="youtube-dl -c"
-alias please="sudo"
-alias t='date +"%T"'
-alias ..='cd ..'
-alias fz='code ~/.zshrc'
-alias sz='source ~/.zshrc'
-alias cleanall='CLEAN_JAVA=1 CLEAN_WEB=1 SKIP_CPP=1 SKIP_GO=1 SKIP_WIN=1 SKIP_LINUX=1 SKIP_PANTS=1 ~/sdmain/src/scripts/dev/buildAll.sh';
-alias cleanp='SKIP_JAVA=1 SKIP_WEB=1 SKIP_CPP=1 SKIP_GO=1 SKIP_WIN=1 SKIP_LINUX=1 SKIP_PANTS=1 ~/sdmain/src/scripts/dev/buildAll.sh'
-alias vm='ssh ubuntu@10.0.65.222'
+alias gum='gch master && gpr'
+
+# DEV ALIASES
 alias fa='cd /Users/manjunathad/Projects/spark && source .buildenv/bin/activate && cd src/rubrik/spark-ui && cls'
 alias dev='fa && make proxy-dev'
 alias gps='fa && make proxy proxy=https://spark-dev.dev-089.my.rubrik-lab.com/'
 alias sr='fa && make proxy proxy=https://rubrik.dev-167.my.rubrik-lab.com/'
-alias al='yarn prebuild && arc lint && yarn checktypes && yarn test-changed-ci && arc land'
 alias docs='fa && make docs'
 alias test='make test-watch'
-alias gum='gch master && gpr'
 
-export EDITOR="vim"
+# ARC ALIASES
+alias al='yarn prebuild && arc lint && yarn checktypes && yarn test-changed-ci && arc land'
+alias ad='arc diff'
+alias adf='arc diff --nolint --nounit --excuse Jenkins'
+
+export EDITOR="nvim"

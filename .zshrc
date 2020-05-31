@@ -129,10 +129,12 @@ alias gps='fa && make proxy proxy=https://spark-dev.dev-089.my.rubrik-lab.com/'
 alias sr='fa && make proxy proxy=https://rubrik.dev-167.my.rubrik-lab.com/'
 alias docs='fa && make docs'
 alias test='make test-watch'
+alias yp='yarn prebuild'
 
 # ARC ALIASES
-alias al='yarn prebuild && arc lint && yarn checktypes && yarn test-changed-ci && arc land'
+alias al='gpr && yarn prebuild && arc lint && yarn checktypes && yarn test-changed-ci && arc land'
 alias ad='arc diff'
 alias adf='arc diff --nolint --nounit --excuse Jenkins'
+alias lint='arc lint'
 
 export EDITOR="nvim"

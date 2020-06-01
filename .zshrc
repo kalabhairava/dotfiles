@@ -130,6 +130,8 @@ alias sr='fa && make proxy proxy=https://rubrik.dev-167.my.rubrik-lab.com/'
 alias docs='fa && make docs'
 alias test='make test-watch'
 alias yp='yarn prebuild'
+alias ct='yarn checktypes'
+alias ctw='yarn checktypes --watch'
 
 # ARC ALIASES
 alias al='gpr && yarn prebuild && arc lint && yarn checktypes && yarn test-changed-ci && arc land'

@@ -1,0 +1,93 @@
+{
+  "breadcrumbs.enabled": true,
+  "editor.fontSize": 15,
+  "workbench.editor.enablePreview": false,
+  "editor.fontFamily": "'Operator Mono', 'Fira Code', 'Consolas', 'monospace' ",
+  "editor.minimap.enabled": false,
+  "files.exclude": {
+    "**/.DS_Store": true,
+    "**/.git": true,
+    "**/.hg": true,
+    "**/.svn": true,
+    "**/yarn-error.log": true,
+    "node_modules": true,
+    "srcmaps": true,
+    "**/.history/**": true
+  },
+  "editor.fontLigatures": true,
+  "gitlens.advanced.messages": {
+    "suppressCommitHasNoPreviousCommitWarning": false,
+    "suppressCommitNotFoundWarning": false,
+    "suppressFileNotUnderSourceControlWarning": false,
+    "suppressGitVersionWarning": false,
+    "suppressLineUncommittedWarning": false,
+    "suppressNoRepositoryWarning": false,
+    "suppressResultsExplorerNotice": true,
+    "suppressShowKeyBindingsNotice": true,
+    "suppressUpdateNotice": false,
+    "suppressWelcomeNotice": false
+  },
+  "workbench.colorCustomizations": {
+    "editorCursor.foreground": "#ffbb00",
+    "editor.background": "#000",
+    "statusBar.background": "#222",
+    "editorLineNumber.activeForeground": "#fff",
+    "tab.inactiveBackground": "#1d1d1d",
+    "sideBar.background": "#111",
+    "sideBar.foreground": "#7ab1d5",
+    "statusBar.noFolderBackground": "#005f5f",
+    "statusBar.debuggingBackground": "#005f5f"
+  },
+  "editor.tokenColorCustomizations": {
+    "comments": "#48697f",
+    "keywords": "#0bb7c7",
+    "functions": "#ff9100",
+    "variables": "#00b3fa",
+    "types": "#ef8d9e",
+    "strings": "#e0714f",
+    "[Default Dark+]": {
+      "textMateRules": [
+        {
+          "scope": ["variable.other.constant", "variable.other.enummember"],
+          "settings": {
+            "foreground": "#9CDCFE"
+          }
+        }
+      ]
+    }
+  },
+  "editor.renderLineHighlight": "none",
+  "window.titleBarStyle": "custom",
+  "editor.cursorWidth": 2,
+  "window.title": "What I cannot build, I do not understand completely.",
+  "workbench.editor.enablePreviewFromQuickOpen": false,
+  "breadcrumbs.symbolSortOrder": "name",
+  "gitlens.views.fileHistory.enabled": true,
+  "gitlens.views.lineHistory.enabled": true,
+  "editor.cursorSmoothCaretAnimation": true,
+  "window.zoomLevel": 0,
+  "editor.fontWeight": "500",
+  "editor.cursorBlinking": "smooth",
+  "workbench.editor.highlightModifiedTabs": true,
+  "workbench.editor.showTabs": true,
+  "workbench.iconTheme": "vscode-icons",
+  "vsicons.dontShowNewVersionMessage": true,
+  "files.hotExit": "onExitAndWindowClose",
+  "workbench.activityBar.visible": false,
+  "workbench.fontAliasing": "antialiased",
+  "editor.autoClosingBrackets": "always",
+  "editor.matchBrackets": "always",
+  "terminal.integrated.fontSize": 13,
+  "git.ignoreLegacyWarning": true,
+  "editor.wordWrap": "on",
+  "gitlens.keymap": "none",
+  "polacode.backgroundColor": "#222",
+  "typescript.tsserver.maxTsServerMemory": 4096,
+  "files.associations": {
+    "*.graphql": "graphql"
+  },
+  "files.trimTrailingWhitespace": true,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}

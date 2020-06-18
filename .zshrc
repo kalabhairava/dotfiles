@@ -121,17 +121,20 @@ alias gsta='git stash apply'
 alias gstc='git stash clear'
 alias gstp='git stash pop'
 alias gum='gch master && gpr'
+alias grc='git rebase --continue'
 
 # DEV ALIASES
 alias fa='cd /Users/manjunathad/Projects/spark && source .buildenv/bin/activate && cd src/rubrik/spark-ui && cls'
 alias dev='fa && make proxy-dev'
 alias gps='fa && make proxy proxy=https://spark-dev.dev-089.my.rubrik-lab.com/'
 alias sr='fa && make proxy proxy=https://rubrik.dev-167.my.rubrik-lab.com/'
+alias gal='fa && make proxy proxy=https://gal.dev-064.my.rubrik-lab.com/'
 alias docs='fa && make docs'
 alias test='make test-watch'
 alias yp='yarn prebuild'
 alias ct='yarn checktypes'
 alias ctw='yarn checktypes --watch'
+alias r='yarn rkgen'
 
 # ARC ALIASES
 alias al='gpr && yarn prebuild && arc lint && yarn checktypes && yarn test-changed-ci && arc land'

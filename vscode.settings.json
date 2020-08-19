@@ -110,6 +110,7 @@
   "gitlens.keymap": "none",
   "polacode.backgroundColor": "#222",
   "typescript.tsserver.maxTsServerMemory": 4096,
+  "terminal.integrated.copyOnSelection": true,
   "files.associations": {
     "*.graphql": "graphql"
   },

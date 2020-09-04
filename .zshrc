@@ -127,17 +127,27 @@ alias grc='git rebase --continue'
 alias fa='cd /Users/manjunathad/Projects/spark && source .buildenv/bin/activate && cd src/rubrik/spark-ui && cls'
 alias dev='fa && make proxy-dev'
 alias gps='fa && make proxy proxy=https://spark-dev.dev-089.my.rubrik-lab.com/'
-alias sr='fa && make proxy proxy=https://rubrik.dev-167.my.rubrik-lab.com/'
 alias gal='fa && make proxy proxy=https://gal.dev-064.my.rubrik-lab.com/'
 alias docs='fa && make docs'
-alias test='make test-watch'
-alias yp='yarn prebuild'
-alias ct='yarn checktypes'
-alias ctw='yarn checktypes --watch'
-alias r='yarn rkgen'
 
 # ARC ALIASES
 alias al='gpr && yarn prebuild && arc lint && yarn checktypes && yarn test-changed-ci && arc land'
 alias ad='arc diff'
 alias adf='arc diff --nolint --nounit --excuse Jenkins'
 alias lint='arc lint'
+
+export EDITOR="vim"
+
+# YARN ALIASES
+alias yp='yarn prebuild'
+alias ct='yarn checktypes'
+alias ctw='yarn checktypes --watch'
+alias r='yarn rkgen'
+alias sb='yarn storybook'
+alias test='yarn test'
+
+
+# https://rubrik.atlassian.net/wiki/spaces/SPARK/pages/279248925/macOS
+export PYENV_ROOT="$HOME/.pyenv/versions/3.6.7"
+export PATH="$PYENV_ROOT/bin:$PATH"
+export CLOUDSDK_PYTHON=python3

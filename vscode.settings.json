@@ -102,18 +102,4 @@
   "eslint.packageManager": "yarn",
   "editor.fontSize": 14,
   "editor.letterSpacing": 0.25,
-  "yaml.schemas": {
-    "file:///Users/manjunathad/.vscode/extensions/atlassian.atlascode-2.8.5/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
-  },
-  "atlascode.bitbucket.enabled": false,
-  "atlascode.jira.jqlList": [
-    {
-      "id": "cec49c6f-60b6-4913-8b7a-a98e9e94923f",
-      "enabled": true,
-      "name": "My rubrik Issues",
-      "query": "assignee = currentUser() AND resolution = Unresolved ORDER BY lastViewed DESC",
-      "siteId": "68bee062-fc6c-488e-a1f8-e6b843febd8c",
-      "monitor": true
-    }
-  ]
 }
